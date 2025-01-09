@@ -17,6 +17,8 @@ public class SecondScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector2 topCorner = new Vector2(Screen.width, Screen.height);
+
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = mousePos;
     }
