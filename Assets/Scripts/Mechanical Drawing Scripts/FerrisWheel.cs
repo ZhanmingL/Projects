@@ -17,5 +17,14 @@ public class FerrisWheel : MonoBehaviour
     void Update()
     {
         transform.Rotate(0, 0, SpinSpeed * Time.deltaTime);
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            SpinSpeed += 5.0f; //If we press mouseLeftButton, add speed of counterClockWise.
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SpinSpeed -= 5.0f; //If we press SpaceKey once, add speed of ClockWise which is opposite speed.
+        }
     }
 }

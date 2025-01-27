@@ -17,5 +17,14 @@ public class Carriages : MonoBehaviour
     void Update()
     {
         transform.Rotate(0, 0, rot * Time.deltaTime);
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            rot -= 5.0f; //Stablise carriages when adding speed.
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rot += 5.0f; //Stablise carriages when adding speed Clockwise as well.
+        }
     }
 }
