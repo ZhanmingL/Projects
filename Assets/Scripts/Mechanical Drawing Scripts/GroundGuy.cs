@@ -19,7 +19,7 @@ public class GroundGuy : MonoBehaviour
         Vector2 CameraPos = Camera.main.WorldToScreenPoint(pos); //Camera perspective's position is a bette way to get positions.
         if(CameraPos.x < 0 || CameraPos.x > Screen.width) //if bottom guy reaches laft corner or right corner, reverse the direction.
         {
-            move = move * -1;
+            move = move * -1; //negative number to reverse a moving direction.
         }
         transform.position = pos;
     }
