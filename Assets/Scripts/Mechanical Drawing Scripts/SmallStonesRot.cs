@@ -16,6 +16,6 @@ public class SmallStonesRot : MonoBehaviour
     {
         Vector3 rot = transform.eulerAngles;
         rot.z += Rot;
-        transform.eulerAngles = rot;
+        transform.eulerAngles = rot; //rotate two top small stones.
     }
 }
