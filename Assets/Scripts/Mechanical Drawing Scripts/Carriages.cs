@@ -16,7 +16,7 @@ public class Carriages : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0, 0, rot * Time.deltaTime);
+        transform.Rotate(0, 0, rot * Time.deltaTime); //I use deltatime to get a good and average time increasing
 
         if (Input.GetMouseButtonDown(0))
         {

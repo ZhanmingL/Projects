@@ -19,3 +19,4 @@ public class SmallStonesRot : MonoBehaviour
         transform.eulerAngles = rot; //rotate two top small stones.
     }
 }
+//These are two small stones above player mouseInput object.

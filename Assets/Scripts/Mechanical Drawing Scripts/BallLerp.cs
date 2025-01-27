@@ -21,10 +21,11 @@ public class BallLerp : MonoBehaviour
     void Update()
     {
         t += Time.deltaTime; //adding t value automatically.
-        transform.position = Vector2.Lerp(start.position, end.position, curve.Evaluate(t));
+        transform.position = Vector2.Lerp(start.position, end.position, curve.Evaluate(t)); //I get my start and end point, now I can do evaluate t time to move by deltatime.
         if (t > 1)
         {
             t = 0; //it's part of my drawing, so I want to repeat this object all the time, t back to initial point, and keep doing this curve codes
         }
     }
 }
+//this is the magic ball sliding from a incline

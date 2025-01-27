@@ -14,7 +14,8 @@ public class MagicStoneMoving : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 StonePos = Camera.main.ScreenToWorldPoint(Input.mousePosition); //let the stone's position follow by mouse position.
+        Vector2 StonePos = Camera.main.ScreenToWorldPoint(Input.mousePosition); //let the stone's position follow by mouse position, I have tp transfer the cameraview to world point.
         transform.position = StonePos;
     }
 }
+//Player controlled character by mouse Position Input.

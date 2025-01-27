@@ -18,7 +18,7 @@ public class SmallStones : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        t += Time.deltaTime;
+        t += Time.deltaTime; //How t is averagelly increasing.
         transform.localScale = Vector2.one * curve.Evaluate(t) * Time.deltaTime * 50; //local scale changes, I time another 50 because it gonna be faster.
         if(t >= 1)
         {
@@ -26,3 +26,4 @@ public class SmallStones : MonoBehaviour
         }
     }
 }
+//3 following small stones of player controlled character, they are blinking!

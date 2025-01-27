@@ -28,3 +28,4 @@ public class FerrisWheel : MonoBehaviour
         }
     }
 }
+//Frame of Ferris wheel, it's the parent of carriages.

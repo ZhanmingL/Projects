@@ -22,6 +22,6 @@ public class GroundGuy : MonoBehaviour
             move = move * -1; //negative number to reverse a moving direction.
         }
         transform.position = pos;
-    }
-    
+    }   
 }
+//It's the moving of bottom magic box guy.
